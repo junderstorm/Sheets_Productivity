@@ -1,18 +1,20 @@
 # Sheets_Productivity
 
+**Run MySQL queries directly in Google Sheets**
+
 The script in this repo allows you to run SQL queries on a MySQL database from within a google sheet. You're able to execute the queries within cells in google sheets and designate which tabs the results should output to!
 
 Steps to implement:
 
 1) Go to tools -> script editor and copy paste the code
 2) Fill in the db credentials
-
+```
 // Replace the variables in this block with real values.
 var address = '';
 var user = '';
 var userPwd = '';
 var db = '';
-
+```
 3) Save the script
 4) Create a tab in your google sheet called 'tab_updates', the script will refer to this tab to look for queries
 5) Create the following headers:
@@ -27,7 +29,7 @@ Starting - a number that represents which column of the tab you've designated wh
 Update - Binary value, True or False which will tell the script whether to execute that particualr query when you run the script, or if you choose, it will igore it. This allows you to have many queries in many rows, but choose the ones you want to run at a given time by designating Update = "True"
 Status - Leave this empty, the script will fill this cell with "success" or "fail" based on the result of the query
 
-7) Once you've filled out all the columns (except the Status column) and have the right tabs created with the names you designated in the Tab column, execute the downloadData function. The google sheet prompt you to authenticate your google account, press accept and the data should appear in the designated location
+7) Once you've filled out all the columns (except the Status column) and have the right tabs created with the names you designated in the Tab column, execute the downloadData function. The google sheet prompt you to authenticate your google account, press accept and the data should appear in the designated location :+1
 
 This should increase productivity as it allows you to maintain data, that can be easily updated directly from a database. Another advantage is that you'll be able to reference the queries anytime you need to remind yourself of the conditions/filters with which the data was queried
 
