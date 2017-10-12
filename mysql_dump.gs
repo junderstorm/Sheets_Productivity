@@ -24,7 +24,7 @@ function downloadData() {
     }
     i++;
   }
-  Browser.msgBox("Great job! I am updated! Thank you!");
+  Browser.msgBox("Download complete");
 }
 
 function readFromTable(myQuery, mySheetName, colStart) {
