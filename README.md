@@ -1,4 +1,4 @@
-#Run MySQL queries directly in Google Sheets
+# Run MySQL queries directly in Google Sheets
 
 The script in this repo allows you to run SQL queries on a MySQL database from within a google sheet. You're able to execute the queries within cells in google sheets and designate which tabs the results should output to!
 
