@@ -27,7 +27,7 @@ Starting - a number that represents which column of the tab you've designated wh
 Update - Binary value, True or False which will tell the script whether to execute that particualr query when you run the script, or if you choose, it will igore it. This allows you to have many queries in many rows, but choose the ones you want to run at a given time by designating Update = "True"
 Status - Leave this empty, the script will fill this cell with "success" or "fail" based on the result of the query
 
-7) Once you've filled out all the columns (except the Status column) and have the right tabs created with the names you designated in the Tab column, execute the script. The google sheet prompt you to authenticate your google account, press accept and the data should appear in the designated location
+7) Once you've filled out all the columns (except the Status column) and have the right tabs created with the names you designated in the Tab column, execute the downloadData function. The google sheet prompt you to authenticate your google account, press accept and the data should appear in the designated location
 
 This should increase productivity as it allows you to maintain data, that can be easily updated directly from a database. Another advantage is that you'll be able to reference the queries anytime you need to remind yourself of the conditions/filters with which the data was queried
 
