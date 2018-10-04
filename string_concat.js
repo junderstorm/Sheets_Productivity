@@ -1,7 +1,7 @@
 /**
  * Returns a single list of paren-enclosed, comma delimmited IDs 
- * Enter 1 as the second arg if you want to add single quotations to each element
- * Leave arg 2 blank if you want the elements unchanged, just concatenated as they are
+ * Arg1 = list of elements to concatenate
+ * Arg2 (optional) = 1 if you want to add single parans around each element, otherwise leave blank
  *
  * @Array {string} formatted like MM/DD/YYYY 
  * @customfunction
