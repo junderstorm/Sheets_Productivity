@@ -3,7 +3,6 @@
  * Arg1 = list of elements to concatenate
  * Arg2 (optional) = 1 if you want to add single parans around each element, otherwise leave blank
  *
- * @Array {string} formatted like MM/DD/YYYY 
  * @customfunction
  */
 function concatstringy(myArray,inty) {
