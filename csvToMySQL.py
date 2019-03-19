@@ -46,8 +46,6 @@ def getQuotes(string):
 	if string == 'nan':
 		return 'None'
 	else: 
-		#print string
-		#return '"'+string+'"'
 		return '"'+re.sub('[^A-Za-z0-9\.\[\]\s:-]+', '',string)+'"' 
 
 def pandasToRows(df):
