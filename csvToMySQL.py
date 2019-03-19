@@ -117,7 +117,7 @@ def insertFunction(query):
 	print row_tracker, '/', len(insertValueList), round(row_tracker/float((len(insertValueList)))*100,2),'%', 'of rows succesfully written!'
 
 if __name__ == "__main__":	
-	#clearData('QBR_Accounts') #Optional clear table: clearData('QBR_Accounts.csv') 
+	#clearData('$csvName')  #Optional clear table
 	df = pandasToRows(getCsvData('$csvName'))
 	queryData =  UploadAccountQuery(df,'$tableName')
 	insertFunction(queryData)
